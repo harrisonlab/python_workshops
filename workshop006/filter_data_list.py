@@ -1,0 +1,30 @@
+#!/usr/bin/python
+
+'''
+read in data from a tab-separated-value file
+only output those line where the marker name is in a list
+'''
+
+import sys
+
+#read the input and output filename from the command line
+inputfile = sys.argv[1]
+namelist = sys.argv[2]
+
+#store the names in a dictionary
+names = []
+with open(namelist) as f1:
+    for line in f1:
+        name = line.strip()
+        names.append(name)
+
+#read in just the first line of the input file
+with open(inputfile) as f2:
+    for i,line in enumerate(f2):
+        #print i
+        name = line.strip()
+        
+        if not name in names: continue
+        
+        print name
+        
