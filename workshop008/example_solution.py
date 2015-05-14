@@ -52,7 +52,7 @@ l1.sort()
 print l1
 print l2
 
-#check the functions catch a difference
+#check the function catches a difference
 #l1[3] = -1
 
 print compare_lists(l1,l2)
