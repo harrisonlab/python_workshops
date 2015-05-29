@@ -13,7 +13,7 @@ from BCBio import GFF
 ap = argparse.ArgumentParser()
 ap.add_argument('--inp_fasta',required=True,type=str,help='input FASTA file')
 ap.add_argument('--inp_gff',required=True,nargs='+',type=str,help='input GFF file(s)')
-conf = ap.parse_args()
+conf = ap.parse_args() #sys.argv
 
 #read in vesca pseudomolecules as a dictionary name:seqrecord
 print 'reading pseudomolecules...'

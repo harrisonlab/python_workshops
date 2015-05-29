@@ -41,7 +41,7 @@ for uid in hit_dict:
     #print nhits, ' ==> ',
 
     #merge overlapping intervals
-    hit_dict[uid] = merge_overlaps(hit_dict[uid])
+    hit_dict[uid] = merge_overlaps(hits)
     #print len(hit_dict[uid])
 
 #open output file

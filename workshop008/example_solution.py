@@ -53,7 +53,7 @@ print l1
 print l2
 
 #check the function catches a difference
-#l1[3] = -1
+l1[3] = -1
 
 print compare_lists(l1,l2)
 
